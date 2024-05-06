@@ -19,6 +19,35 @@ public class Main {
         System.out.println(customer3.toString());
 
 
+        System.out.println("Account1");
+
+        SavingAccount savingAcc1 = new SavingAccount(0001, customer1, 1000.00);
+
+        System.out.println(savingAcc1.getAmount());
+
+        savingAcc1.deposit(100);
+
+        System.out.println(savingAcc1.getAmount());
+
+        savingAcc1.withdraw(200);
+
+        System.out.println(savingAcc1.getAmount());
+
+
+        System.out.println("Account2");
+
+        FixedDeposit savingAcc2 = new FixedDeposit(002, customer2, 5000, "12/12/2024");
+
+        System.out.println(savingAcc2.getAmount());
+
+        savingAcc2.deposit(100);
+
+        System.out.println(savingAcc2.getAmount());
+
+        savingAcc2.withdraw(200);
+
+        System.out.println(savingAcc2.getAmount());
+
 
 
     }

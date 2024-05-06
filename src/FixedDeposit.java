@@ -7,12 +7,9 @@ public class FixedDeposit extends Account {
     }
 
     @Override
-    public void deposit(double depositAmount) {
-
-    }
-
-    @Override
     public void withdraw(double withdrawAmount) {
-
+        withdrawAmount = getAmount();
+        setAmount(0);
+        System.out.println("withdraw amount = " + withdrawAmount);
     }
 }

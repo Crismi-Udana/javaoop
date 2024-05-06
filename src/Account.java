@@ -8,9 +8,37 @@ abstract public class Account {
         this.customerDetails = customerDetails;
         this.amount = amount;
     }
+
+    public int getAccNo() {
+        return accNo;
+    }
+
+    public void setAccNo(int accNo) {
+        this.accNo = accNo;
+    }
+
+    public Customer getCustomerDetails() {
+        return customerDetails;
+    }
+
+    public void setCustomerDetails(Customer customerDetails) {
+        this.customerDetails = customerDetails;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
     public void deposit(double depositAmount){
-        this.amount =+ depositAmount;
+        amount = amount +depositAmount;
         System.out.println("Deposit Amount = "+ depositAmount);
     };
     abstract public void withdraw(double withdrawAmount);
+
+
+
 }
